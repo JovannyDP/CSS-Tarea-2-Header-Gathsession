@@ -1,0 +1,188 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+.hero .container .hero-text {
+  width: 50%;
+  height: 60%;
+}
+.hero .container .hero-text h1 {
+  font-size: 80px;
+  font-weight: bold;
+  font-family: "Merriweather", serif;
+  color: #FFFFFF;
+  padding-bottom: 35px;
+  width: 97%;
+}
+.hero .container .hero-text p {
+  font-size: 24px;
+  font-weight: 100;
+  color: #FFFFFF;
+  width: 85%;
+  padding-bottom: 35px;
+}
+.hero .container .hero-text .hero-buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 150px;
+}
+.hero .container .hero-text .hero-buttons .btn {
+  background-color: #DB2A6B;
+  color: #FFFFFF;
+  padding: 10px 50px;
+  border-radius: 12px 12px 12px 0;
+  text-decoration: none;
+  color: inherit;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 200;
+  margin-right: 30px;
+}
+.hero .container .hero-text .hero-buttons .btn:hover {
+  background-color: rgb(179.6385542169, 30.3614457831, 85.1807228916);
+  color: white;
+}
+.hero .container .hero-text .hero-buttons .btn-secondary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-size: 18px;
+}
+.hero .container .hero-text .hero-buttons .btn-secondary img {
+  width: 40px;
+  height: 40px;
+}
+.hero .container .hero-text .hero-buttons .btn-secondary:hover {
+  font-weight: 600;
+  gap: 0;
+}
+.hero .container .hero-text .hero-features {
+  display: flex;
+  gap: 40px;
+}
+.hero .container .hero-text .hero-features .feature {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 20%;
+  text-decoration: none;
+}
+.hero .container .hero-text .hero-features .feature h2 {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+}
+.hero .container .hero-text .hero-features .feature img {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+}
+.hero .container .hero-text .hero-features .feature:hover img {
+  background-color: #DB2A6B;
+  transition: all 0.3s ease;
+}
+.hero .container .hero-text .hero-features .feature:hover h2 {
+  color: #DB2A6B;
+  transition: all 0.3s ease;
+}
+.hero .container .hero-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 30px;
+  width: 50%;
+  position: relative;
+}
+.hero .container .hero-img img:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1/span 2; /* fila 1 y 2 */
+}
+.hero .container .hero-img img:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1; /* solo fila 1 */
+}
+.hero .container .hero-img img:nth-child(3) {
+  grid-column: 3;
+  grid-row: 1/span 3; /* fila 1, 2 y 3 */
+  position: absolute;
+  top: 120px;
+  right: -30px;
+}
+.hero .container .hero-img img:nth-child(4) {
+  grid-column: 1;
+  grid-row: 3; /* solo fila 3 */
+}
+.hero .container .hero-img img:nth-child(5) {
+  grid-column: 2;
+  grid-row: 2/span 2; /* fila 2 y 3 */
+}
+.hero .container .hero-img img {
+  width: 240px;
+  height: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 70px;
+}
+header .container ul a {
+  text-decoration: none;
+  color: inherit;
+  color: #FFFFFF;
+  font-weight: 200;
+  position: relative;
+}
+header .container ul a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 3px;
+  background-color: #DB2A6B;
+  transition: width 0.3s ease;
+}
+header .container ul a:hover::after {
+  width: 100%;
+}
+
+.container {
+  padding: 50px 200px;
+}
+
+html * {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: #2B2D38;
+  background-image: url("../img/elipse-background.svg");
+  background-repeat: no-repeat;
+  background-position: right 266px;
+}
+
+/*# sourceMappingURL=styles.css.map */

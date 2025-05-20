@@ -1,0 +1,29 @@
+header .container {
+    @include flex();
+    
+
+    ul {
+        @include reset-list();
+        @include flex();
+        padding-right: 70px;
+        a {
+            @include reset-link();
+            color: $white;
+            font-weight: 200;
+            position: relative;
+        }
+        a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -5px;
+            width: 0%;
+            height: 3px;
+            background-color: $pink;
+            transition: width 0.3s ease;
+        }
+        a:hover::after {
+        width: 100%;
+        }
+    }
+}

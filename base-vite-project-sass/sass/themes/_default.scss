@@ -1,0 +1,11 @@
+html * {
+    font-family: $primary-font;
+}
+ 
+body {
+    overflow-x: hidden;
+    background-color: $black;
+    background-image: url("../img/elipse-background.svg");
+    background-repeat: no-repeat;
+    background-position: right 266px;
+} 
